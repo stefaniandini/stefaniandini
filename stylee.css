@@ -1,0 +1,216 @@
+<style>* {
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+}
+
+body {
+    background-color: beige;
+    color: #5c4033;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: #5c4033;
+    color: #faf9f6;
+}
+
+nav a {
+    margin: 0 1rem;
+    text-decoration: none;
+    color: #c8ad7f;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #5c4033;
+    border: 1px solid beige;
+    padding: 8px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    background-color: #5c4033;
+}
+
+.intro {
+    display: flex;
+    padding: 30px;
+    align-items: center;
+    gap: 30px;
+}
+
+.center-text {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.teks-garis {
+    display: inline-block;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.teks-garis::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #5c4033;
+}
+
+.tentang-saya {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.kalimat {
+    text-indent: 50px;
+    text-align: justify;
+    line-height: 1.5;
+    margin-right: 30px;
+    margin-left: 10px;
+}
+
+.portfolio,
+.opini,
+.kontak,
+footer {
+    padding: 2rem;
+}
+
+.tabel-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+table {
+    border-collapse: collapse;
+    width: auto;
+}
+
+th,
+td {
+    border: 2px solid #412d24;
+    padding: 8px 12px;
+    text-align: center;
+}
+
+.edit {
+    position: relative;
+}
+
+.edit a {
+    position: absolute;
+    bottom: -15px;
+    right: -15px;
+    background-color: #5a3e2b;
+    color: #c8ad7f;
+    padding: 10px 15px;
+    margin-right: 310px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.edit a:hover {
+    background-color: blanchedalmond !important;
+}
+
+.opini {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.opini .card {
+    border: 2px solid #412d24;
+    padding: 1rem;
+    text-align: center;
+}
+
+.left,
+.right {
+    padding: 20px;
+    width: 300px; /*ini untuk mengatur lebar dibagian hubungi saya*/
+}
+
+.left h2,
+.right h2 {
+    text-align: center;
+    color: #5a3e2b;
+}
+
+.kontak {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #5a3e2b;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    width: 100%;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: blanchedalmond;
+}
+
+.separator {
+    margin: 0 20px;
+}
+
+iframe {
+    width: 300px;
+    height: 300px;
+    border: none;
+    border-radius: 10px;
+}
+
+footer {
+    text-align: center;
+    background-color: #5c4033;
+    color: #faf9f6;
+}
+
+</style>
